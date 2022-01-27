@@ -16,7 +16,8 @@ This repository is made for checking some GitHub's functions.
   - 調査結果
     - ページ跨ぐならwikiでやれ
   - wikiで複数ページに分けて情報をまとめる方法
-    - 参考サイト
+    - 参考サイト(https://style.potepan.com/articles/31873.html)
+    - 基本的にwiki以下で並列でページが作成されるが，文中にハイパーリンクを仕込んで行き来できるようにすれば，入子関係を示したページを作成することは可能だと感じた
 - 画像の貼り付け
   - 参考サイト(https://qiita.com/r_midori/items/2c4feb5de05535441bc8)
 - gif画像, 動画の埋め込み
