@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+    <head>
+        <meta charaset="UTF-8">
+        <title>打刻アプリ</title>
+    </head>
+    <body>
+        <h1>打刻アプリ</h1>
+
+        <form method="post" action="{{ url_for('register') }}">
+            <table border="1">
+                <tr>
+                    <th>社員ID</th>
+                    <th>日付</th>
+                    <th>時間</th>
+                </tr>
+                <tr>
+                    <th><input type="text" name="ID"></th>
+                    <th><input type="text" name="date"></th>
+                    <th><input type="text" name="time"></th>
+                </tr>
+            </table>
+
+            <br>
+            <input type="submit" value="登録">
+        </form>
+
+    </body>
+</html>

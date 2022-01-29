@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="ja">
+    <head>
+        <meta charaset="UTF-8">
+        <title>打刻アプリ</title>
+    </head>
+    <body>
+        <h1>打刻アプリ</h1>
+        <h2>入力情報一覧</h2>
 
+        {% if timeLogs == [] %}
+            <p>登録された打刻情報がありません</p>
+        {% else %}
+            {% for timeLog in timeLogs %}
+                <p>社員ID: {{ timeLog.ID }}</p>
+                <p>日付: {{ timeLog.date }}</p>
+                <p>時間: {{ timeLog.time }}</p>
+            {% endfor %}
+        {% endif %}
 
+        <a href="{{ url_for('form') }}">編集</a>
+    </body>
 </html>
